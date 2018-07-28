@@ -16,17 +16,13 @@ class MyFirstWidget extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("MyApp")),
         body: Center(
-          child: Center(
+          child: Column(
             children: <Widget>[myText, myImage],
-          )
+            mainAxisSize: MainAxisSize.min,
+          ),
         )
       )
-    )
-
-    return Center(child: Column(
-      children: <Widget>[myText, myImage],
-      mainAxisSize: MainAxisSize.min
-    ));
+    );
   }
 }
 
